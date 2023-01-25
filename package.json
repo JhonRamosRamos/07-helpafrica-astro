@@ -1,12 +1,22 @@
 {
-  "name": "@example/blog",
+  "name": "helpafrica-astro",
   "type": "module",
   "version": "0.0.1",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/senseijurado/07-helpafrica-astro"
+  },
+  "release": {
+    "branches": [
+      "dev",
+      "main"
+    ]
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "rm -rf dist/ && npx semantic-release && astro build && yarn preview",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -16,5 +26,13 @@
     "@astrojs/sitemap": "^1.0.0",
     "astro": "^2.0.1",
     "semantic-release": "19.0.5"
-  }
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ]
 }

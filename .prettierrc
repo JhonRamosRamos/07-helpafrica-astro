@@ -1,0 +1,11 @@
+{
+  "editorconfig": true,
+  "arrowParens": "always",
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "jsxSingleQuote": false,
+  "semi": true,
+  "singleAttributePerLine": true,
+  "requirePragma": true,
+  "parser": "babel"
+}

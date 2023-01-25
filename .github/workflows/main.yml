@@ -38,4 +38,4 @@ jobs:
             - name: Launch Semantic Release
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-              run: npx semantic-release
+

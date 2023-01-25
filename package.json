@@ -16,7 +16,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "rm -rf dist/ && npx semantic-release && astro build && yarn preview",
+    "build": "rm -rf dist/ && astro build && yarn preview",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -24,14 +24,14 @@
     "@astrojs/mdx": "^0.15.0",
     "@astrojs/rss": "^2.1.0",
     "@astrojs/sitemap": "^1.0.0",
-    "astro": "^2.0.1",
-    "semantic-release": "19.0.5"
+    "astro": "^2.0.1"
   },
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     "@semantic-release/npm",
+    "@semantic-release/github",
     "@semantic-release/git"
   ]
 }

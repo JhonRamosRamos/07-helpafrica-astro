@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{astro,html,vue,tsx,jsx,ts,js,css,scss}'
+    "@root/**/**/*.{astro,html,vue,tsx,jsx,ts,js,css,scss}",
+    "@components/*.{astro,html,vue,tsx,jsx,ts,js,css,scss}",
 
   ],
   corePlugins: [

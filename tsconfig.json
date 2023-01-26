@@ -4,24 +4,45 @@
     "target": "ESNext",
     "module": "CommonJS",
     "isolatedModules": false,
-    "experimentalDecorators": false,
     "removeComments": true,
     "allowJs": true,
     "baseUrl": ".",
     "paths": {
-      "@root/*": ["src/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@components/*": ["src/components/*"],
-      "@content/*": ["src/content*"],
-      "@styles/*": ["src/styles/*"],
-      "@pages/*": ["src/pages/*"],
-      "@helpers/*": ["src/helpers/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@data/*": ["src/data/*"],
-      "@config/*": ["src/config/*"],
+      "@root/*": [
+        "src/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@content/*": [
+        "src/content*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@helpers/*": [
+        "src/helpers/*"
+      ],
+      "@hooks/*": [
+        "src/hooks/*"
+      ],
+      "@data/*": [
+        "src/data/*"
+      ],
+      "@config/*": [
+        "src/config/*"
+      ]
     },
     "esModuleInterop": true,
     "declaration": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
   }
 }

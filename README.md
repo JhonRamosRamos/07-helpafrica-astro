@@ -2,6 +2,27 @@
 
 ```
 npm create astro@latest -- --template blog
+
+
+
+
+
+
+To do that, simply do these steps:
+
+sudo -i
+npm install npm -g
+
+sudo -i
+
+npm cache clean -f
+npm install -g n
+n stable
+Then afterwards, run these to verify your new versions.
+
+node -v
+
+npm -v '''
 ```
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)

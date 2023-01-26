@@ -8,7 +8,7 @@ import compress from "astro-compress";
 
 
 export default defineConfig({
-	// site: 'https://helpafrica.netlify.app',
+	site: 'https://helpafrica.netlify.app',
 	integrations: [
 		mdx(),
 		sitemap(),
@@ -31,8 +31,5 @@ export default defineConfig({
 		})
 	],
 	outDir: 'dist/',
-	output: 'server',
-	server: {
-		port: 4200,
-	}
+	output: 'server'
 });

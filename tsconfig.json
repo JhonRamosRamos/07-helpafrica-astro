@@ -6,12 +6,10 @@
     "isolatedModules": false,
     "experimentalDecorators": false,
     "removeComments": true,
-    "noEmit": false,
-    "jsx": "react",
     "allowJs": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
+      "@root/*": ["src/*"],
       "@layouts/*": ["src/layouts/*"],
       "@components/*": ["src/components/*"],
       "@content/*": ["src/content*"],
@@ -22,10 +20,8 @@
       "@data/*": ["src/data/*"],
       "@config/*": ["src/config/*"],
     },
-    "checkJs": true,
     "esModuleInterop": true,
     "declaration": true,
     "outDir": "dist"
-  },
-  "compileOnSave": true
+  }
 }

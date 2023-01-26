@@ -16,15 +16,19 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "rm -rf dist/ && astro build && yarn preview",
-    "preview": "astro preview",
+    "build": "yarn clean && astro build",
+    "clean": "rm -rf dist/ && rm -rf .github/*",
+    "preview": "yarn build && astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.15.0",
     "@astrojs/rss": "^2.1.0",
     "@astrojs/sitemap": "^1.0.0",
-    "astro": "^2.0.1"
+    "@astrojs/tailwind": "^3.0.0",
+    "astro": "^2.0.1",
+    "astro-imagetools": "^0.7.6",
+    "tailwindcss": "^3.2.4"
   },
   "plugins": [
     "@semantic-release/commit-analyzer",
@@ -33,5 +37,8 @@
     "@semantic-release/npm",
     "@semantic-release/github",
     "@semantic-release/git"
-  ]
+  ],
+  "devDependencies": {
+    "astro-compress": "^1.1.28"
+  }
 }

@@ -1,38 +1,30 @@
 import { defineConfig } from 'astro/config';
 
 // astro integrations imports
+import image from "@astrojs/image";
 import mdx from '@astrojs/mdx';
+import react from "@astrojs/react";
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
-import compress from "astro-compress";
+
 
 
 export default defineConfig({
-	// site: 'https://helpafrica.netlify.app',
-	integrations: [
-		mdx(),
-		sitemap(),
-		tailwind( {
-			config: {
-				applyBaseStyles: true,
-				path: './tailwind.config.cjs'
-			}
-		} ),
-		compress( {
-			css: true,
-			html: true,
-			js: true,
-			svg: true,
-			img: true,
-			pipeline: {
-				fulfilled: true,
-				accomplished: true,
-			}
-		})
-	],
-	outDir: 'dist/',
-	output: 'server',
-	server: {
-		port: 4200,
-	}
+  site: 'https://helpafrica.netlify.app',
+  integrations: [
+    mdx(),
+    sitemap(),
+    tailwind({
+    config: {
+      applyBaseStyles: true,
+      path: './tailwind.config.cjs'
+    }
+    }),
+    react(),
+    image( {
+      logLevel: 'info',
+
+    } ),
+  ],
+
 });
